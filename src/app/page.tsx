@@ -1,3 +1,4 @@
+import JobFilterSidebar from '@/components/jobs/JobFilterSidebar'
 import JobResults from '@/components/jobs/JobResults'
 import H1 from '@/components/shared/H1'
 
@@ -9,6 +10,7 @@ export default async function Home() {
         <p className="text-muted-foreground">Find your dream job.</p>
       </div>
       <section className="flex flex-col gap-4 md:flex-row">
+        <JobFilterSidebar />
         <JobResults />
       </section>
     </main>
