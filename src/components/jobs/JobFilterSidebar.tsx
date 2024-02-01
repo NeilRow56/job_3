@@ -11,8 +11,6 @@ import { Button } from '../ui/button'
 async function filterJobs(formData: FormData) {
   'use server'
 
-  console.log(formData.get('q') as string)
-
   const values = Object.fromEntries(formData.entries())
 
   const { q, type, location, remote } = jobFilterSchema.parse(values)
@@ -61,6 +59,7 @@ async function JobFilterSidebar() {
             <Label htmlFor="location">Location</Label>
             <Select id="location" name="location" defaultValue="">
               <option value="">All locations</option>
+
               {distinctLocations.map((location) => (
                 <option key={location} value={location}>
                   {location}
