@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.4",
+    "@hookform/resolvers": "^3.3.4",
     "@prisma/client": "^5.8.1",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-separator": "^1.0.3",
@@ -30,6 +31,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-draft-wysiwyg": "^1.15.0",
+    "react-hook-form": "^7.50.0",
     "react-markdown": "^9.0.1",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",

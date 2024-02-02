@@ -61,6 +61,10 @@ const locationSchema = z
 
 export const createJobSchema = z
   .object({
+    email: z
+      .string()
+      .min(1, { message: 'This field has to be filled.' })
+      .email('This is not a valid email.'),
     title: requiredString.max(100),
     type: requiredString.refine(
       (value) => jobTypes.includes(value),
